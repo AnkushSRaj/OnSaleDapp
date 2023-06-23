@@ -1,0 +1,61 @@
+{
+  "name": "eth-marketplace",
+  "version": "0.1.0",
+  "description": "An Ethereum Marketplace",
+  "author": "AdityaSinghBhati",
+  "dependencies": {
+    "@fleekhq/fleek-storage-js": "^1.0.22",
+    "@openzeppelin/contracts": "^4.9.0",
+    "@truffle/hdwallet-provider": "^2.0.5",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babel-register": "6.26.0",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.1.3",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
+    "concurrently": "^8.1.0",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "identicon.js": "^2.3.3",
+    "ipfs-http-client": "^56.0.2",
+    "mongoose": "^7.2.2",
+    "react": "16.8.4",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "16.8.4",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "2.1.3",
+    "styled-components": "^5.3.6",
+    "truffle": "5.0.5",
+    "web3": "^1.9.0"
+  },
+  "homepage": "http://dappuniversity.github.io/social-network",
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "client": "react-scripts start",
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
